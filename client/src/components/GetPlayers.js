@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import DisplayPlayers from './DisplayPlayers';
 
 class GetPlayers extends React.Component {
     constructor() {
@@ -33,6 +34,7 @@ class GetPlayers extends React.Component {
                         <div className='subtitle'>2019 Player Search Rankings</div>
                     </div>
                 </header>
+                <DisplayPlayers players={this.state.players} />
             </section>
         )
     }
