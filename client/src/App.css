@@ -51,7 +51,13 @@ header {
 }
 
 .subtitle {
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+button {
+  border-radius: 1rem;
+  margin-bottom: .5rem;
+  /* background: gainsboro; */
 }
 
 /* DisplayPlayers */
@@ -84,4 +90,75 @@ header {
 
 .playerEntry:hover {
   background: midnightblue;
+}
+
+/* ColorToggle */
+
+.App-header {
+  /* color: gainsboro; */
+  /* background: mediumvioletred; */
+  /* background: hotpink; */
+}
+
+header {
+  color: gainsboro;
+  background: mediumvioletred;
+  /* background: hotpink; */
+}
+
+.header {
+  color: white;
+  background: deeppink;
+  border-bottom: .025px solid lavender;
+}
+
+.container {
+  border-bottom: 3rem solid hotpink;
+}
+
+.playerEntry {
+  color: white;
+  background: hotpink;
+  /* background: mediumvioletred; */
+  /* background: palevioletred; */
+  border-bottom: .025px solid lavender;
+}
+
+.playerEntry:hover {
+  /* background: hotpink; */
+  background: mediumvioletred;
+}
+
+/* ColorToggle 2 */
+
+header {
+  color: white;
+  /* background: mediumvioletred; */
+  /* background: hotpink; */
+  background: darkmagenta;
+}
+
+.header {
+  color: white;
+  /* background: deeppink; */
+  background: mediumorchid;
+  border-bottom: .025px solid lavender;
+}
+
+.container {
+  border-bottom: 3rem solid orchid;
+}
+
+.playerEntry {
+  color: white;
+  /* background: hotpink; */
+  /* background: mediumvioletred; */
+  /* background: palevioletred; */
+  background: orchid;
+  border-bottom: .025px solid thistle;
+}
+
+.playerEntry:hover {
+  /* background: hotpink; */
+  background: darkorchid;
 }

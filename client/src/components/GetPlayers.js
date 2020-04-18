@@ -20,6 +20,11 @@ class GetPlayers extends React.Component {
         .catch(error => console.log('Error: ', error));
     }
 
+    handleClick = event => {
+        event.preventDefault();
+        console.log('clicked')
+    }
+
 //lifecycle. run this when the component mounts for the first time
     componentDidMount() {
         this.getUserData();
@@ -33,6 +38,7 @@ class GetPlayers extends React.Component {
                     <div className='App-header'>
                         <h2 className='title'>Women's World Cup</h2>
                         <div className='subtitle'>2019 Player Search Rankings</div>
+                        <button onClick={this.handleClick}>Theme</button>
                     </div>
                     <img className='womensCup' src='https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/2019_FIFA_Women%27s_World_Cup.svg/800px-2019_FIFA_Women%27s_World_Cup.svg.png' alt='2019 Womens World Cup logo'></img>
                 </header>
