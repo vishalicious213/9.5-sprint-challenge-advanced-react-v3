@@ -3,12 +3,12 @@ import React from 'react';
 const DisplayPlayers = (props) => {
     return (
         <section className='players'>
-            <h4 className='header'>
+            <h4 className='colHeader'>
                 <div>Name</div>
                 <div>Country</div>
                 <div>Searches</div>
             </h4>
-            
+
             <div className='container'>
                 {props.players.map(player => {
                     return (

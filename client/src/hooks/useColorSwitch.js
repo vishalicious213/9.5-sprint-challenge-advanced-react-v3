@@ -1,20 +1,26 @@
-import { useState, useEffect } from 'react';
-// import useLocalStorage from './useLocalStorage';
+// import { useState, useEffect } from 'react';
 
-const useColorSwitch = () => {
-    const [darkModeOn, setDarkModeOn] = useState(false);
+const useColorSwitch = (color) => {
+    const main = document.querySelector('.toggle');
+    if (color === 1) {
+        console.log('theme 1: ', color);
+        main.classList.remove('toggleTwo');
+        main.classList.remove('toggleThree');
+    } else if (color === 2) {
+        console.log('theme 2: ', color);
+        main.classList.remove('toggleThree');
+        main.classList.add('toggleTwo');
+    } else if (color === 3) {
+        console.log('theme 3: ', color);
+        main.classList.remove('toggleTwo');
+        main.classList.add('toggleThree')
+    } else {
+        console.log('theme 1: ', color);
+        main.classList.remove('toggleTwo');
+        main.classList.remove('toggleThree');
+    }
 
-    useEffect(() => {
-        if (darkModeOn === true) {
-            console.log('Dark Mode On');
-            document.body.classList.add('dark-mode')
-        } else {
-            console.log('Dark Mode Off')
-            document.body.classList.remove('dark-mode')
-        }
-    }, [darkModeOn])
-
-    return [darkModeOn, setDarkModeOn];
+    return main;
 }
 
 export default useColorSwitch;

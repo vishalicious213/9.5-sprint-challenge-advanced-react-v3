@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+import { AppDiv } from './AppStyles';
+// import './App.css';
 import GetPlayers from './components/GetPlayers';
 
 function App() {
   return (
-    <div className="App">
-      <GetPlayers />
-    </div>
+    <AppDiv>
+      <div className='main'>
+        <GetPlayers />
+      </div>
+    </AppDiv>
   );
 }
 

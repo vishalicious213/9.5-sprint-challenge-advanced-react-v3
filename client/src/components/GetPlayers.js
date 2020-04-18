@@ -25,11 +25,10 @@ class GetPlayers extends React.Component {
     handleClick = event => {
         event.preventDefault();
         this.setState({color: this.state.color + 1});
-        if (this.state.color > 3) {
+        if (this.state.color > 2) {
             this.setState({color: 1})
         }
-        console.log('color: ', this.state.color);
-        // useColorSwitch();
+        // console.log('color: ', this.state.color);
     }
 
 //lifecycle. run this when the component mounts for the first time
@@ -37,19 +36,20 @@ class GetPlayers extends React.Component {
         this.getUserData();
     }
 
+//lifecycle. this runs when state is updated
     componentDidUpdate(prevProps, prevState) {
-      console.log('prevState: ', prevState.color);
-      console.log('thisState: ', this.state.color);
-      if (prevState.color !== this.state.color) {
-        // alert('User state has changed'); // I was using a pipe (|) instead of bang (!) !!!
-        console.log('color toggled: ', this.state.color)
-      }
+        // console.log('prevState: ', prevState.color);
+        // console.log('thisState: ', this.state.color);
+        if (prevState.color !== this.state.color) {
+            // console.log('color toggled: ', this.state.color)
+            useColorSwitch(this.state.color);
+        }
     }
     
     render() {
         return (
-            <section>
-                <header>
+            <section className='toggle'>
+                <header className='top'>
                     <img className='fifaLogo' src='https://1000logos.net/wp-content/uploads/2017/01/FIFA-Logo-500x381.png' alt='FIFA logo'></img>
                     <div className='App-header'>
                         <h2 className='title'>Women's World Cup</h2>
