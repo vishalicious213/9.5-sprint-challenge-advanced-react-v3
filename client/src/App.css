@@ -3,7 +3,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background: #04043a;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -11,4 +12,64 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+/* GetPlayers.js */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: #04043a;
+}
+
+.fifaLogo {
+  width: 100%;
+  align-self: center;
+}
+
+.womensCup {
+  /* width: 100%; */
+  height: 80%;
+  align-self: center;
+  justify-self: center;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem;
+}
+
+/* DisplayPlayers */
+
+.header {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  padding-top: .5rem;
+  padding-bottom: .75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  background: #213a8e;
+  border-bottom: .025px solid lightslategray;
+}
+
+.container {
+  /* border: 1px solid orange; */
+  border-bottom: 3rem solid #0156a3;
+}
+
+.playerEntry {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  color: white;
+  background: #0156a3;
+  border-bottom: .025px solid lightslategray;
+}
+
+.playerEntry:hover {
+  background: midnightblue;
 }
