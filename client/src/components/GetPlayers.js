@@ -1,12 +1,14 @@
 import React from 'react';
 import axios from 'axios';
 import DisplayPlayers from './DisplayPlayers';
+import useColorSwitch from './../hooks/useColorSwitch';
 
 class GetPlayers extends React.Component {
     constructor() {
         super();
         this.state = {
             players: [],
+            color: 1,
         }
     }
 
@@ -22,12 +24,26 @@ class GetPlayers extends React.Component {
 
     handleClick = event => {
         event.preventDefault();
-        console.log('clicked')
+        this.setState({color: this.state.color + 1});
+        if (this.state.color > 3) {
+            this.setState({color: 1})
+        }
+        console.log('color: ', this.state.color);
+        // useColorSwitch();
     }
 
 //lifecycle. run this when the component mounts for the first time
     componentDidMount() {
         this.getUserData();
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+      console.log('prevState: ', prevState.color);
+      console.log('thisState: ', this.state.color);
+      if (prevState.color !== this.state.color) {
+        // alert('User state has changed'); // I was using a pipe (|) instead of bang (!) !!!
+        console.log('color toggled: ', this.state.color)
+      }
     }
     
     render() {
