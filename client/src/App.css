@@ -4,7 +4,7 @@
 
 .App-header {
   /* background-color: #282c34; */
-  background: #04043a;
+  /* background: #04043a; */
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,18 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .App-header {
+    font-size: calc(6px + 2vmin);
+  }
 }
 
 /* GetPlayers.js */
