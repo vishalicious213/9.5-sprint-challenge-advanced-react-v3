@@ -157,7 +157,7 @@ export const AppDiv = styled.div`
   }
 
 
-    /* ColorToggle 4 (ORANGE) */
+  /* ColorToggle 4 (ORANGE) */
 
   .toggleFour {
     .top {
@@ -187,7 +187,7 @@ export const AppDiv = styled.div`
   }
 
 
-      /* ColorToggle 5 (YELLOW) */
+  /* ColorToggle 5 (YELLOW) */
 
   .toggleFive {
     .App-header {
@@ -217,6 +217,36 @@ export const AppDiv = styled.div`
 
     .playerEntry:hover {
       background: orange;
+    }
+  }
+
+
+  /* ColorToggle 6 (GREEN) */
+
+  .toggleSix {
+    .top {
+      color: white;
+      background: darkgreen;
+    }
+
+    .colHeader {
+      color: white;
+      background: forestgreen;
+      border-bottom: .025px solid lavender;
+    }
+
+    .container {
+      border-bottom: 3rem solid mediumseagreen;
+    }
+
+    .playerEntry {
+      color: white;
+      background: mediumseagreen;
+      border-bottom: .025px solid lavender;
+    }
+
+    .playerEntry:hover {
+      background: darkgreen;
     }
   }
 }
