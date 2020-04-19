@@ -93,40 +93,9 @@ export const AppDiv = styled.div`
     }
 
 
-
-  /* ColorToggle 2 */
+  /* ColorToggle 2 (PURPLE) */
 
   .toggleTwo {
-    .top {
-      color: gainsboro;
-      background: mediumvioletred;
-    }
-
-    .colHeader {
-      color: white;
-      background: deeppink;
-      border-bottom: .025px solid lavender;
-    }
-
-    .container {
-      border-bottom: 3rem solid hotpink;
-    }
-
-    .playerEntry {
-      color: white;
-      background: hotpink;
-      border-bottom: .025px solid lavender;
-    }
-
-    .playerEntry:hover {
-      background: mediumvioletred;
-    }
-  }
-
-
-  /* ColorToggle 3 */
-
-  .toggleThree {
     .top {
       color: white;
       background: darkmagenta;
@@ -154,6 +123,66 @@ export const AppDiv = styled.div`
 
     .dark-mode {
       border: 3px solid black;
+    }
+  }
+
+
+  /* ColorToggle 3 (PINK) */
+
+  .toggleThree {
+    .top {
+      color: gainsboro;
+      background: mediumvioletred;
+    }
+
+    .colHeader {
+      color: white;
+      background: deeppink;
+      border-bottom: .025px solid lavender;
+    }
+
+    .container {
+      border-bottom: 3rem solid hotpink;
+    }
+
+    .playerEntry {
+      color: white;
+      background: hotpink;
+      border-bottom: .025px solid lavender;
+    }
+
+    .playerEntry:hover {
+      background: mediumvioletred;
+    }
+  }
+
+
+    /* ColorToggle 4 (ORANGE) */
+
+  .toggleFour {
+    .top {
+      color: gainsboro;
+      background: orangered;
+    }
+
+    .colHeader {
+      color: white;
+      background: tomato;
+      border-bottom: .025px solid lavender;
+    }
+
+    .container {
+      border-bottom: 3rem solid coral;
+    }
+
+    .playerEntry {
+      color: white;
+      background: coral;
+      border-bottom: .025px solid lavender;
+    }
+
+    .playerEntry:hover {
+      background: orangered;
     }
   }
 }
