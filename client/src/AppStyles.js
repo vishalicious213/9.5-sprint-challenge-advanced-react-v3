@@ -185,5 +185,39 @@ export const AppDiv = styled.div`
       background: orangered;
     }
   }
+
+
+      /* ColorToggle 5 (YELLOW) */
+
+  .toggleFive {
+    .App-header {
+      color: black;
+    }
+
+    .top {
+      color: black;
+      background: orange;
+    }
+
+    .colHeader {
+      color: black;
+      background: gold;
+      border-bottom: .025px solid lavender;
+    }
+
+    .container {
+      border-bottom: 3rem solid darkkhaki;
+    }
+
+    .playerEntry {
+      color: black;
+      background: darkkhaki;
+      border-bottom: .025px solid lavender;
+    }
+
+    .playerEntry:hover {
+      background: orange;
+    }
+  }
 }
 `

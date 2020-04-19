@@ -25,7 +25,7 @@ class GetPlayers extends React.Component {
     handleClick = event => {
         event.preventDefault();
         this.setState({color: this.state.color + 1});
-        if (this.state.color > 3) {
+        if (this.state.color > 4) {
             this.setState({color: 1})
         }
         // console.log('color: ', this.state.color);
