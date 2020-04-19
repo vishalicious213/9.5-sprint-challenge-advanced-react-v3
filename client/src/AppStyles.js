@@ -249,5 +249,39 @@ export const AppDiv = styled.div`
       background: darkgreen;
     }
   }
+
+
+  /* ColorToggle 7 (TURQUOISE) */
+
+  .toggleSeven {
+    .App-header {
+      color: black;
+    }
+
+    .top {
+      color: black;
+      background: lightseagreen;
+    }
+
+    .colHeader {
+      color: black;
+      background: darkturquoise;
+      border-bottom: .025px solid lavender;
+    }
+
+    .container {
+      border-bottom: 3rem solid mediumturquoise;
+    }
+
+    .playerEntry {
+      color: black;
+      background: mediumturquoise;
+      border-bottom: .025px solid lavender;
+    }
+
+    .playerEntry:hover {
+      background: lightseagreen;
+    }
+  }
 }
 `
